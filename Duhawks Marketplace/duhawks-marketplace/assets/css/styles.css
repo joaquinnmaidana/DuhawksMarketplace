@@ -1,0 +1,273 @@
+/* Shared custom styling: Bootstrap provides the grid, forms and buttons. */
+
+/* 
+   DUHAWKS MARKETPLACE
+   Custom CSS Stylesheet
+
+   Bootstrap handles the grid, forms,
+   and basic buttons.
+    */
+
+
+/* 
+   1. GLOBAL VARIABLES
+    */
+
+:root {
+    --purple: #4c257c;
+    --light: #f5f1fa;
+}
+
+
+/* 
+   2. GENERAL PAGE STYLING
+    */
+
+body {
+    background: #faf9fc;
+    color: #25212c;
+    padding-bottom: 90px;
+
+    font-family:
+        system-ui,
+        -apple-system,
+        Segoe UI,
+        sans-serif;
+}
+
+/* Limit the width of page content */
+.container {
+    max-width: 860px;
+}
+
+
+/* 
+   3. HEADER AND BRAND
+   */
+
+.brand {
+    color: var(--purple);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+
+/* 
+   4. HOME PAGE BANNER
+    */
+
+.hero {
+    background: linear-gradient(
+        125deg,
+        #4c257c,
+        #8056b5
+    );
+
+    color: white;
+}
+
+.hero h2 {
+    font-weight: 750;
+}
+
+
+/* 
+   5. CUSTOM BUTTONS
+     */
+
+.btn-purple {
+    background: var(--purple);
+    color: white;
+}
+
+.btn-purple:hover {
+    background: #351954;
+    color: white;
+}
+
+
+/* 
+   6. CATEGORY CARDS
+    */
+
+.category-tile {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    min-height: 140px;
+    padding: 10px;
+
+    border: 1px solid #ded4e9;
+    border-radius: 12px;
+
+    background: white;
+    color: #2c2440;
+
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+/* Category icons */
+.category-tile span {
+    font-size: 2.5rem;
+    color: var(--purple);
+}
+
+
+/* 
+   7. PRODUCT CARDS
+    */
+
+.product-card {
+    border: 1px solid #e5dff0;
+    border-radius: 12px;
+
+    background: white;
+    overflow: hidden;
+
+    height: 100%;
+}
+
+/* Product image placeholder */
+.product-art {
+    height: 135px;
+    background: var(--light);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 3rem;
+}
+
+/* Product information */
+.product-info {
+    padding: 12px;
+}
+
+/* Product title */
+.product-info h3 {
+    font-size: 1rem;
+    margin: 0 0 4px;
+}
+
+/* Product price */
+.price {
+    font-weight: 750;
+    color: var(--purple);
+}
+
+
+/* 
+   8. INFORMATION SECTIONS
+   */
+
+.note {
+    background: white;
+
+    border: 1px solid #e5dff0;
+    border-radius: 12px;
+
+    padding: 15px;
+}
+
+
+/* 
+   9. PRODUCT FILTERS
+    */
+
+.filter-label {
+    background: #eee8f5;
+
+    border-radius: 30px;
+    padding: 5px 13px;
+
+    font-size: 0.85rem;
+}
+
+
+/* 
+   10. BOTTOM NAVIGATION BAR
+   */
+
+.bottom-nav {
+    position: fixed;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: white;
+    border-top: 1px solid #e1d9e9;
+
+    display: flex;
+    justify-content: center;
+
+    z-index: 10;
+
+    box-shadow: 0 -3px 15px #00000009;
+}
+
+/* Individual navigation links */
+.bottom-nav a {
+    width: 105px;
+    padding: 8px 2px;
+
+    color: #5b5265;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 1.4rem;
+}
+
+/* Navigation text labels */
+.bottom-nav a span {
+    display: block;
+    font-size: 0.7rem;
+}
+
+/* Highlight the current page */
+.bottom-nav a.active {
+    color: var(--purple);
+    font-weight: bold;
+}
+
+
+/* 
+   11. BACK BUTTON
+   */
+
+.back-link {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+
+/* 
+   12. SMALL BUTTONS
+    */
+
+.small-btn {
+    font-size: 0.76rem;
+    padding: 0.3rem 0.5rem;
+}
+
+
+/* 
+   13. RESPONSIVE DESIGN
+    */
+
+/* Larger product images on wider screens */
+@media (min-width: 720px) {
+
+    .product-art {
+        height: 180px;
+    }
+
+}
