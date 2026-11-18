@@ -5,3 +5,4 @@ Finishing up the codes
 Page failed in the open live server 
 Code done, deploying page now
 Error because of location of the files in github
+Everything working now
